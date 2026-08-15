@@ -36,3 +36,11 @@ Before running the project, make sure the following tools are installed:
 2. Navigate into the `student-portal` directory.
 3. Compile the C++ source file using a C++ compiler.
 4. Run the generated executable.
+## Project Structure
+
+```text
+student-portal/
+├── .gitignore
+├── README.md
+└── src/
+    └── main.cpp
