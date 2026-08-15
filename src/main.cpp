@@ -30,6 +30,7 @@ void registerStudent(const Student &student) {
     std::cout << "ID: " << student.id << std::endl;
     std::cout << "Name: " << student.name << std::endl;
     std::cout << "Program: " << student.program << std::endl;
+    std::cout << "Registration completed successfully." << std::endl;
 }
 bool findStudentById(const Student &student, int searchId) {
     return student.id == searchId;
