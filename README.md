@@ -30,3 +30,9 @@ Before running the project, make sure the following tools are installed:
 - A C++ compiler such as GCC or Clang
 - A terminal application
 
+## Setup Instructions
+
+1. Clone the repository from GitHub.
+2. Navigate into the `student-portal` directory.
+3. Compile the C++ source file using a C++ compiler.
+4. Run the generated executable.
