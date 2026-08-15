@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Build files
+build/
+*.o
+*.out
+
+# Executables
+student-portal
+
+# Environment / secrets
+.env
