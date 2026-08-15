@@ -44,3 +44,14 @@ student-portal/
 ├── README.md
 └── src/
     └── main.cpp
+## Build and Run
+
+Compile the project from the repository root using:
+
+g++ src/main.cpp -o student-portal
+
+Run the compiled program using:
+
+./student-portal
+
+The program initializes the Student Portal and confirms that the portal has started successfully.
