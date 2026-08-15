@@ -43,12 +43,12 @@ student-portal/
 ├── .gitignore
 ├── README.md
 └── src/
-    └── main.cpp
+    └── student_portal.cpp
 ## Build and Run
 
 Compile the project from the repository root using:
 
-g++ src/main.cpp -o student-portal
+g++ src/ student_portal.cpp -o student-portal
 
 Run the compiled program using:
 
