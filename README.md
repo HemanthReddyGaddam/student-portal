@@ -55,3 +55,16 @@ Run the compiled program using:
 ./student-portal
 
 The program initializes the Student Portal and confirms that the portal has started successfully.
+
+## Git Workflow
+
+The project follows a basic Git workflow:
+
+1. Create or modify project files.
+2. Review changes using `git diff`.
+3. Stage relevant changes using `git add`.
+4. Create a descriptive commit using `git commit`.
+5. Push committed changes to GitHub using `git push`.
+
+Feature development will be performed on dedicated branches and merged into the main branch after the work is completed.
+
