@@ -22,3 +22,11 @@ This project provides a simple foundation that can be extended with features suc
 Initial project setup is complete.
 
 The project currently contains a basic C++ application and Git repository configuration.
+## Prerequisites
+
+Before running the project, make sure the following tools are installed:
+
+- Git
+- A C++ compiler such as GCC or Clang
+- A terminal application
+
