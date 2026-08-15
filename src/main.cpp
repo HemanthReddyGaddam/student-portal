@@ -13,6 +13,13 @@ bool isValidStudent(const Student &student) {
            !student.program.empty();
 }
 
+void displayStudentProfile(const Student &student) {
+    std::cout << "\n--- Student Profile ---" << std::endl;
+    std::cout << "Student ID: " << student.id << std::endl;
+    std::cout << "Student Name: " << student.name << std::endl;
+    std::cout << "Program: " << student.program << std::endl;
+}
+
 void registerStudent(const Student &student) {
     if (!isValidStudent(student)) {
         std::cout << "Invalid student information." << std::endl;
@@ -36,6 +43,7 @@ int main() {
     Student student{2026201018, "Hemanth", "MTech"};
 
     registerStudent(student);
+    displayStudentProfile(student);
     int searchId = 2026201018;
 
     if (findStudentById(student, searchId)) {
