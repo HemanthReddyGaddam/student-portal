@@ -35,11 +35,18 @@ void registerStudent(const Student &student) {
 bool findStudentById(const Student &student, int searchId) {
     return student.id == searchId;
 }
+void displayPortalMenu() {
+    std::cout << "\n--- Student Portal Menu ---" << std::endl;
+    std::cout << "1. Register Student" << std::endl;
+    std::cout << "2. View Student Profile" << std::endl;
+    std::cout << "3. Search Student" << std::endl;
+}
 int main() {
     std::string portalName = "Student Portal";
 
     std::cout << portalName << std::endl;
     std::cout << "Portal initialized successfully." << std::endl;
+    displayPortalMenu();
 
     Student student{2026201018, "Hemanth", "MTech"};
 
