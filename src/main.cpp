@@ -24,7 +24,9 @@ void registerStudent(const Student &student) {
     std::cout << "Name: " << student.name << std::endl;
     std::cout << "Program: " << student.program << std::endl;
 }
-
+bool findStudentById(const Student &student, int searchId) {
+    return student.id == searchId;
+}
 int main() {
     std::string portalName = "Student Portal";
 
@@ -34,6 +36,15 @@ int main() {
     Student student{2026201018, "Hemanth", "MTech"};
 
     registerStudent(student);
+    int searchId = 2026201018;
+
+    if (findStudentById(student, searchId)) {
+        std::cout << "\nStudent with ID " << searchId
+                << " was found." << std::endl;
+    } else {
+        std::cout << "\nStudent with ID " << searchId
+                << " was not found." << std::endl;
+    }
 
     return 0;
 }
