@@ -7,7 +7,18 @@ struct Student {
     std::string program;
 };
 
+bool isValidStudent(const Student &student) {
+    return student.id > 0 &&
+           !student.name.empty() &&
+           !student.program.empty();
+}
+
 void registerStudent(const Student &student) {
+    if (!isValidStudent(student)) {
+        std::cout << "Invalid student information." << std::endl;
+        return;
+    }
+
     std::cout << "Student Registration" << std::endl;
     std::cout << "ID: " << student.id << std::endl;
     std::cout << "Name: " << student.name << std::endl;
