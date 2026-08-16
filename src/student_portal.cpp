@@ -176,6 +176,10 @@ int main() {
 
     editStudentProfile(student);
     displayStudentProfile(student);
+    displayDashboard(student);
+    displayAcademicStatus();
+    displayAttendanceSummary();
+    displayPortalStatus();
 
     int searchId = 2026201018;
     if (findStudentById(student, searchId)) {
