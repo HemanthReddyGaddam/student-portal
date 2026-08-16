@@ -45,6 +45,13 @@ struct LoginCredentials {
     std::string username;
     std::string password;
 };
+bool validateLogin(const LoginCredentials& credentials) {
+    const std::string validUsername = "student";
+    const std::string validPassword = "portal123";
+
+    return credentials.username == validUsername &&
+           credentials.password == validPassword;
+}
 int main() {
     std::string portalName = "Student Portal";
 
