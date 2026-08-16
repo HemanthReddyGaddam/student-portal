@@ -130,8 +130,11 @@ int main() {
 
     registerStudent(student);
     displayStudentProfile(student);
-    int searchId = 2026201018;
 
+    editStudentProfile(student);
+    displayStudentProfile(student);
+
+    int searchId = 2026201018;
     if (findStudentById(student, searchId)) {
         std::cout << "\nStudent with ID " << searchId
                 << " was found." << std::endl;
