@@ -211,6 +211,11 @@ void displayContactInformation() {
     std::cout << "Support Email: support@studentportal.edu" << std::endl;
     std::cout << "Support Hours: Monday-Friday, 9:00 AM - 5:00 PM" << std::endl;
 }
+void displayContactInformation() {
+    std::cout << "\n=== Student Portal Contact ===" << std::endl;
+    std::cout << "Support Email: support@studentportal.edu" << std::endl;
+    std::cout << "Support Hours: Monday-Friday, 9:00 AM - 5:00 PM" << std::endl;
+}
 int main() {
     std::string portalName = "Student Portal";
 
