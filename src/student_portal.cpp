@@ -52,6 +52,24 @@ bool validateLogin(const LoginCredentials& credentials) {
     return credentials.username == validUsername &&
            credentials.password == validPassword;
 }
+bool loginUser() {
+    LoginCredentials credentials;
+
+    std::cout << "\n=== Student Login ===\n";
+    std::cout << "Username: ";
+    std::cin >> credentials.username;
+
+    std::cout << "Password: ";
+    std::cin >> credentials.password;
+
+    if (validateLogin(credentials)) {
+        std::cout << "Login successful.\n";
+        return true;
+    }
+
+    std::cout << "Invalid username or password.\n";
+    return false;
+}
 int main() {
     std::string portalName = "Student Portal";
 
