@@ -202,6 +202,10 @@ bool loginUser() {
 
     return false;
 }
+void displayNotification(const std::string &message) {
+    std::cout << "\n=== Student Notification ===" << std::endl;
+    std::cout << message << std::endl;
+}
 int main() {
     std::string portalName = "Student Portal";
 
@@ -224,6 +228,7 @@ int main() {
     displayAcademicStatus();
     displayAttendanceSummary();
     displayPortalStatus();
+    displayNotification("Welcome to the Student Portal.");
 
     PortalSettings settings{true, false, "English"};
 
