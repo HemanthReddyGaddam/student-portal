@@ -144,6 +144,14 @@ void updatePortalSettings(PortalSettings &settings,
     std::cout << "Portal settings updated successfully."
               << std::endl;
 }
+void resetPortalSettings(PortalSettings &settings) {
+    settings.notificationsEnabled = true;
+    settings.darkModeEnabled = false;
+    settings.language = "English";
+
+    std::cout << "Portal settings restored to default values."
+              << std::endl;
+}
 void displayAttendanceSummary() {
     const int attendedClasses = 18;
     const int totalClasses = 20;
