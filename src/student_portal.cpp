@@ -12,7 +12,11 @@ bool isValidStudent(const Student &student) {
            !student.name.empty() &&
            !student.program.empty();
 }
-
+bool isValidProfileUpdate(const std::string &name,
+                          const std::string &program) {
+    return name.length() >= 2 &&
+           program.length() >= 2;
+}
 void displayStudentProfile(const Student &student) {
     std::cout << "\n--- Student Profile ---" << std::endl;
     std::cout << "Student ID: " << student.id << std::endl;
@@ -22,7 +26,7 @@ void displayStudentProfile(const Student &student) {
 void updateStudentProfile(Student &student,
                           const std::string &newName,
                           const std::string &newProgram) {
-    if (newName.empty() || newProgram.empty()) {
+    if (!isValidProfileUpdate(newName, newProgram)) {
         std::cout << "Profile update failed: invalid information."
                   << std::endl;
         return;
