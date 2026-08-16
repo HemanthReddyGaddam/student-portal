@@ -58,6 +58,13 @@ void editStudentProfile(Student &student) {
 
     updateStudentProfile(student, newName, newProgram);
 }
+void displayDashboard(const Student &student) {
+    std::cout << "\n=== Student Dashboard ===" << std::endl;
+    std::cout << "Welcome, " << student.name << "!" << std::endl;
+    std::cout << "Student ID: " << student.id << std::endl;
+    std::cout << "Program: " << student.program << std::endl;
+    std::cout << "Registration Status: Active" << std::endl;
+}
 
 void registerStudent(const Student &student) {
     if (!isValidStudent(student)) {
