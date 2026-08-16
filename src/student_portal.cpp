@@ -127,6 +127,23 @@ void displayPortalSettings(const PortalSettings &settings) {
     std::cout << "Language: "
               << settings.language << std::endl;
 }
+void updatePortalSettings(PortalSettings &settings,
+                          bool notifications,
+                          bool darkMode,
+                          const std::string &language) {
+    if (language.empty()) {
+        std::cout << "Settings update failed: language cannot be empty."
+                  << std::endl;
+        return;
+    }
+
+    settings.notificationsEnabled = notifications;
+    settings.darkModeEnabled = darkMode;
+    settings.language = language;
+
+    std::cout << "Portal settings updated successfully."
+              << std::endl;
+}
 void displayAttendanceSummary() {
     const int attendedClasses = 18;
     const int totalClasses = 20;
