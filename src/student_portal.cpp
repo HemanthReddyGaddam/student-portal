@@ -216,6 +216,13 @@ void displayContactInformation() {
     std::cout << "Support Email: support@studentportal.edu" << std::endl;
     std::cout << "Support Hours: Monday-Friday, 9:00 AM - 5:00 PM" << std::endl;
 }
+void displayHelpInformation() {
+    std::cout << "\n=== Student Portal Help ===" << std::endl;
+    std::cout << "Use the login credentials provided by the portal administrator."
+              << std::endl;
+    std::cout << "Contact support if you experience account or profile issues."
+              << std::endl;
+}
 int main() {
     std::string portalName = "Student Portal";
 
