@@ -75,6 +75,10 @@ int main() {
 
     std::cout << portalName << std::endl;
     std::cout << "Portal initialized successfully." << std::endl;
+    if (!loginUser()) {
+    std::cout << "Access denied. Exiting portal." << std::endl;
+    return 0;
+}
     displayPortalMenu();
 
     Student student{2026201018, "Hemanth", "MTech"};
