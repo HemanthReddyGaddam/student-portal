@@ -121,6 +121,12 @@ void displayAttendanceSummary() {
     std::cout << "Attendance: "
               << attendancePercentage << "%" << std::endl;
 }
+void displayPortalStatus() {
+    std::cout << "\n--- Portal Status ---" << std::endl;
+    std::cout << "Account Status: Active" << std::endl;
+    std::cout << "Registration: Completed" << std::endl;
+    std::cout << "Profile: Updated" << std::endl;
+}
 bool loginUser() {
     const int maxAttempts = 3;
 
