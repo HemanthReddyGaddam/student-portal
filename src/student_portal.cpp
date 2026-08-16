@@ -108,6 +108,19 @@ bool validateLogin(const LoginCredentials& credentials) {
     return credentials.username == validUsername &&
            credentials.password == validPassword;
 }
+void displayAttendanceSummary() {
+    const int attendedClasses = 18;
+    const int totalClasses = 20;
+
+    double attendancePercentage =
+        (static_cast<double>(attendedClasses) / totalClasses) * 100.0;
+
+    std::cout << "\n--- Attendance Summary ---" << std::endl;
+    std::cout << "Classes Attended: "
+              << attendedClasses << "/" << totalClasses << std::endl;
+    std::cout << "Attendance: "
+              << attendancePercentage << "%" << std::endl;
+}
 bool loginUser() {
     const int maxAttempts = 3;
 
