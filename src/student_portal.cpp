@@ -87,6 +87,16 @@ void displayPortalMenu() {
     std::cout << "2. View Student Profile" << std::endl;
     std::cout << "3. Search Student" << std::endl;
 }
+void displayAcademicStatus() {
+    const int completedCourses = 4;
+    const int totalCourses = 6;
+
+    std::cout << "\n--- Academic Status ---" << std::endl;
+    std::cout << "Completed Courses: "
+              << completedCourses << std::endl;
+    std::cout << "Remaining Courses: "
+              << totalCourses - completedCourses << std::endl;
+}
 struct LoginCredentials {
     std::string username;
     std::string password;
