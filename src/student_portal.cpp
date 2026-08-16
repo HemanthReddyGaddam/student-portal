@@ -53,21 +53,34 @@ bool validateLogin(const LoginCredentials& credentials) {
            credentials.password == validPassword;
 }
 bool loginUser() {
-    LoginCredentials credentials;
+    const int maxAttempts = 3;
 
-    std::cout << "\n=== Student Login ===\n";
-    std::cout << "Username: ";
-    std::cin >> credentials.username;
+    for (int attempt = 1; attempt <= maxAttempts; ++attempt) {
+        LoginCredentials credentials;
 
-    std::cout << "Password: ";
-    std::cin >> credentials.password;
+        std::cout << "\n=== Student Login ===\n";
+        std::cout << "Username: ";
+        std::cin >> credentials.username;
 
-    if (validateLogin(credentials)) {
-        std::cout << "Login successful.\n";
-        return true;
+        std::cout << "Password: ";
+        std::cin >> credentials.password;
+
+        if (validateLogin(credentials)) {
+            std::cout << "Login successful.\n";
+            return true;
+        }
+
+        std::cout << "Invalid username or password.";
+
+        if (attempt < maxAttempts) {
+            std::cout << " Attempts remaining: "
+                      << maxAttempts - attempt << std::endl;
+        } else {
+            std::cout << " Maximum login attempts reached."
+                      << std::endl;
+        }
     }
 
-    std::cout << "Invalid username or password.\n";
     return false;
 }
 int main() {
