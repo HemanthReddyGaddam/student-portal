@@ -166,7 +166,7 @@ void displayAttendanceSummary() {
               << attendancePercentage << "%" << std::endl;
 }
 void displayPortalStatus() {
-    std::cout << "\n--- Portal Status ---" << std::endl;
+    std::cout << "\n--- Login Portal Status ---" << std::endl;
     std::cout << "Account Status: Active" << std::endl;
     std::cout << "Registration: Completed" << std::endl;
     std::cout << "Profile: Updated" << std::endl;
