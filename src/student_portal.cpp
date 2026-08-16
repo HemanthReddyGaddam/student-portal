@@ -41,6 +41,10 @@ void displayPortalMenu() {
     std::cout << "2. View Student Profile" << std::endl;
     std::cout << "3. Search Student" << std::endl;
 }
+struct LoginCredentials {
+    std::string username;
+    std::string password;
+};
 int main() {
     std::string portalName = "Student Portal";
 
