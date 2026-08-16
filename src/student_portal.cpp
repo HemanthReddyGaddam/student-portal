@@ -37,6 +37,20 @@ void updateStudentProfile(Student &student,
 
     std::cout << "Student profile updated successfully." << std::endl;
 }
+void editStudentProfile(Student &student) {
+    std::string newName;
+    std::string newProgram;
+
+    std::cout << "\n=== Edit Student Profile ===" << std::endl;
+
+    std::cout << "Enter new name: ";
+    std::cin >> newName;
+
+    std::cout << "Enter new program: ";
+    std::cin >> newProgram;
+
+    updateStudentProfile(student, newName, newProgram);
+}
 
 void registerStudent(const Student &student) {
     if (!isValidStudent(student)) {
