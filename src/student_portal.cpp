@@ -19,6 +19,20 @@ void displayStudentProfile(const Student &student) {
     std::cout << "Student Name: " << student.name << std::endl;
     std::cout << "Program: " << student.program << std::endl;
 }
+void updateStudentProfile(Student &student,
+                          const std::string &newName,
+                          const std::string &newProgram) {
+    if (newName.empty() || newProgram.empty()) {
+        std::cout << "Profile update failed: invalid information."
+                  << std::endl;
+        return;
+    }
+
+    student.name = newName;
+    student.program = newProgram;
+
+    std::cout << "Student profile updated successfully." << std::endl;
+}
 
 void registerStudent(const Student &student) {
     if (!isValidStudent(student)) {
