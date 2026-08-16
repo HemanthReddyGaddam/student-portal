@@ -108,6 +108,11 @@ bool validateLogin(const LoginCredentials& credentials) {
     return credentials.username == validUsername &&
            credentials.password == validPassword;
 }
+struct PortalSettings {
+    bool notificationsEnabled;
+    bool darkModeEnabled;
+    std::string language;
+};
 void displayAttendanceSummary() {
     const int attendedClasses = 18;
     const int totalClasses = 20;
