@@ -32,10 +32,17 @@ void updateStudentProfile(Student &student,
         return;
     }
 
+    std::string oldName = student.name;
+    std::string oldProgram = student.program;
+
     student.name = newName;
     student.program = newProgram;
 
-    std::cout << "Student profile updated successfully." << std::endl;
+    std::cout << "\nProfile update completed." << std::endl;
+    std::cout << "Previous Name: " << oldName << std::endl;
+    std::cout << "Updated Name: " << student.name << std::endl;
+    std::cout << "Previous Program: " << oldProgram << std::endl;
+    std::cout << "Updated Program: " << student.program << std::endl;
 }
 void editStudentProfile(Student &student) {
     std::string newName;
