@@ -166,7 +166,7 @@ void displayAttendanceSummary() {
               << attendancePercentage << "%" << std::endl;
 }
 void displayPortalStatus() {
-    std::cout << "\n--- Login Portal Status ---" << std::endl;
+    std::cout << "\n--- Student Portal Status ---" << std::endl;
     std::cout << "Account Status: Active" << std::endl;
     std::cout << "Registration: Completed" << std::endl;
     std::cout << "Profile: Updated" << std::endl;
@@ -205,11 +205,6 @@ bool loginUser() {
 void displayNotification(const std::string &message) {
     std::cout << "\n=== Student Notification ===" << std::endl;
     std::cout << message << std::endl;
-}
-void displayContactInformation() {
-    std::cout << "\n=== Student Portal Contact ===" << std::endl;
-    std::cout << "Support Email: support@studentportal.edu" << std::endl;
-    std::cout << "Support Hours: Monday-Friday, 9:00 AM - 5:00 PM" << std::endl;
 }
 void displayContactInformation() {
     std::cout << "\n=== Student Portal Contact ===" << std::endl;
