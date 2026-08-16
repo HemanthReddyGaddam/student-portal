@@ -113,6 +113,20 @@ struct PortalSettings {
     bool darkModeEnabled;
     std::string language;
 };
+void displayPortalSettings(const PortalSettings &settings) {
+    std::cout << "\n=== Portal Settings ===" << std::endl;
+
+    std::cout << "Notifications: "
+              << (settings.notificationsEnabled ? "Enabled" : "Disabled")
+              << std::endl;
+
+    std::cout << "Dark Mode: "
+              << (settings.darkModeEnabled ? "Enabled" : "Disabled")
+              << std::endl;
+
+    std::cout << "Language: "
+              << settings.language << std::endl;
+}
 void displayAttendanceSummary() {
     const int attendedClasses = 18;
     const int totalClasses = 20;
