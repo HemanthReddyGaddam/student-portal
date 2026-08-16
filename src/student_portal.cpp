@@ -223,6 +223,13 @@ void displayHelpInformation() {
     std::cout << "Contact support if you experience account or profile issues."
               << std::endl;
 }
+void displayEmergencySupport() {
+    std::cout << "\n=== Emergency Support ===" << std::endl;
+    std::cout << "For urgent portal access issues, contact the"
+              << " Student Portal Administrator." << std::endl;
+    std::cout << "Support is available during official working hours."
+              << std::endl;
+}
 int main() {
     std::string portalName = "Student Portal";
 
