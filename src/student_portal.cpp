@@ -225,6 +225,13 @@ int main() {
     displayAttendanceSummary();
     displayPortalStatus();
 
+    PortalSettings settings{true, false, "English"};
+
+    displayPortalSettings(settings);
+
+    updatePortalSettings(settings, false, true, "English");
+    displayPortalSettings(settings);
+
     int searchId = 2026201018;
     if (findStudentById(student, searchId)) {
         std::cout << "\nStudent with ID " << searchId
